@@ -139,6 +139,7 @@ public class DiscussPostController implements CommunityConstant {
             }
         }
 
+        model.addAttribute("pag",page.getoffset());
         model.addAttribute("comments", commentVoList);
 
         return "/site/discuss-detail";
