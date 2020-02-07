@@ -40,7 +40,7 @@ public class MessageController {
 
         // 会话列表
         List<Message> conversationList = messageService.findConversations(
-                user.getId(), page.getOffset(), page.getLimit());
+                user.getId(), page.getoffset(), page.getLimit());
         List<Map<String, Object>> conversations = new ArrayList<>();
         if (conversationList != null) {
             for (Message message : conversationList) {
@@ -71,7 +71,7 @@ public class MessageController {
         page.setRows(messageService.findLetterCount(conversationId));
 
         // 私信列表
-        List<Message> letterList = messageService.findLetters(conversationId, page.getOffset(), page.getLimit());
+        List<Message> letterList = messageService.findLetters(conversationId, page.getoffset(), page.getLimit());
         List<Map<String, Object>> letters = new ArrayList<>();
         if (letterList != null) {
             for (Message message : letterList) {
