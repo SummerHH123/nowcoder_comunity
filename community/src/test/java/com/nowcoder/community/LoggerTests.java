@@ -23,6 +23,8 @@ public class LoggerTests {
         logger.info("info log");
         logger.warn("warn log");
         logger.error("error log");
+
+
     }
 
 }

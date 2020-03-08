@@ -6,12 +6,15 @@ import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
+import org.springframework.web.bind.annotation.ModelAttribute;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 
+
+//对所有controller做统一异常处理
 @ControllerAdvice(annotations = Controller.class)
 public class ExceptionAdvice {
 
@@ -24,8 +27,10 @@ public class ExceptionAdvice {
             logger.error(element.toString());
         }
 
+//        判断请求是异步还是同步
         String xRequestedWith = request.getHeader("x-requested-with");
         if ("XMLHttpRequest".equals(xRequestedWith)) {
+//
             response.setContentType("application/plain;charset=utf-8");
             PrintWriter writer = response.getWriter();
             writer.write(CommunityUtil.getJSONString(1, "服务器异常!"));

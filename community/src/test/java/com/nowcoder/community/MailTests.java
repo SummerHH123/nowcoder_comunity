@@ -35,6 +35,7 @@ public class MailTests {
         System.out.println(content);
 
         mailClient.sendMail("lihonghe@nowcoder.com", "HTML", content);
+
     }
 
 }

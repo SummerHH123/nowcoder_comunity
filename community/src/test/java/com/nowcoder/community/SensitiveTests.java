@@ -25,6 +25,7 @@ public class SensitiveTests {
         text = "这里可以☆赌☆博☆,可以☆嫖☆娼☆,可以☆吸☆毒☆,可以☆开☆票☆,哈哈哈!";
         text = sensitiveFilter.filter(text);
         System.out.println(text);
+
     }
 
 }
