@@ -1,0 +1,4 @@
+2020-02-12 19:19:09,731 WARN [http-nio-9090-exec-10] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:198] Resolved [java.lang.NullPointerException]
+2020-02-12 19:19:19,367 WARN [http-nio-9090-exec-3] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:198] Resolved [java.lang.NullPointerException]
+2020-02-12 19:33:24,690 WARN [HikariPool-1 housekeeper] c.z.h.p.HikariPool [HikariPool.java:766] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=10m44s772ms).
+2020-02-12 19:58:30,169 WARN [HikariPool-1 housekeeper] c.z.h.p.HikariPool [HikariPool.java:766] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=24m35s471ms).
